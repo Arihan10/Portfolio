@@ -1,6 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starshot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 90%;
+            max-width: 1200px;
+            aspect-ratio: 16 / 9;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Optional: Add a title or description */
+        .content {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        
+        @media (max-width: 768px) {
+            .video-container {
+                width: 95%;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
 <body>
-    <h1>Test - Starshot Page</h1>
+    <div class="content">
+        <!-- Optional: Add a title above the video -->
+        <h1>Starshot</h1>
+        
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/Dyx9Q3MFfKA" title="STARSHOT HTN"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
 </body>
 </html>

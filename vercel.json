@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/starshot",
+      "destination": "/Starshot",
+      "permanent": false
+    },
+    {
+      "source": "/STARSHOT",
+      "destination": "/Starshot",
+      "permanent": false
+    }
+  ]
+}
